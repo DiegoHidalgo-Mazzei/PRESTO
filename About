@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Prestoapp</title>
+  <style>
+    body {
+      background-color: #2A3148;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    section {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace 'XYZ' with the correct path to your image file -->
+    <img src="XYZ" alt="Header Image" style="width: 100%; max-width: 600px;">
+    <h1>Sobre PRESTOapp</h1>
+  </header>
+
+  <section>
+    <!-- Your body text goes here -->
+  </section>
+</body>
+</html>
