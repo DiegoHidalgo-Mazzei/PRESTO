@@ -26,6 +26,24 @@
     u {
       text-decoration: underline;
     }
+
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+    }
+
+    li {
+      display: flex;
+      counter-increment: item;
+      margin-bottom: 10px;
+    }
+
+    li::before {
+      content: counter(item);
+      color: #3498db; /* Blue color for index letters */
+      font-weight: bold;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
@@ -37,22 +55,22 @@
   <section>
     <h2>Índice de Preguntas:</h2>
     <ol>
-      <li><a href="#destinada">1. ¿A quién está destinada la aplicación?</a></li>
-      <li><a href="#ayuda">2. ¿Cómo te ayuda PRESTOapp a cuidar de tu salud mental?</a></li>
-      <li><a href="#severos">3. ¿Qué debo hacer si tengo síntomas graves?</a></li>
-      <li><a href="#estrategias">4. ¿Qué estrategias/corrientes psicoterapéuticas se utilizan?</a></li>
-      <li><a href="#creadores">5. ¿Quién ha creado PRESTOapp?</a></li>
-      <li><a href="#evaluacion">6. ¿Cada cuánto debo hacer una evaluación?</a></li>
-      <li><a href="#utilidad_evaluaciones">7. ¿Para qué sirven las evaluaciones?</a></li>
-      <li><a href="#personalizacion">8. ¿Cómo se personalizan los módulos a realizar?</a></li>
-      <li><a href="#modulos_simultaneos">9. ¿Cuántos módulos puedo hacer a la vez?</a></li>
-      <li><a href="#empezar_modulo">10. ¿Por qué módulo debería empezar?</a></li>
-      <li><a href="#desactivar_modulo">11. ¿Se puede desactivar un módulo para hacer otro?</a></li>
-      <li><a href="#completar_modulo">12. ¿Cómo completo un módulo?</a></li>
-      <li><a href="#acceso_modulo_completo">13. ¿Puedo volver a acceder al contenido de un módulo que ya he completado?</a></li>
-      <li><a href="#mapa_emocional">14. ¿Qué puedo encontrar en el mapa emocional?</a></li>
-      <li><a href="#activar_modulo_mapa">15. ¿Cómo activo un módulo que encuentro en el mapa emocional?</a></li>
-      <li><a href="#ambitos_vida">16. ¿En qué consiste el apartado ámbitos de la vida que aparece en mi plan de tratamiento?</a></li>
+      <li><a href="#destinada">¿A quién está destinada la aplicación?</a></li>
+      <li><a href="#ayuda">¿Cómo te ayuda PRESTOapp a cuidar de tu salud mental?</a></li>
+      <li><a href="#severos">¿Qué debo hacer si tengo síntomas graves?</a></li>
+      <li><a href="#estrategias">¿Qué estrategias/corrientes psicoterapéuticas se utilizan?</a></li>
+      <li><a href="#creadores">¿Quién ha creado PRESTOapp?</a></li>
+      <li><a href="#evaluacion">¿Cada cuánto debo hacer una evaluación?</a></li>
+      <li><a href="#utilidad_evaluaciones">¿Para qué sirven las evaluaciones?</a></li>
+      <li><a href="#personalizacion">¿Cómo se personalizan los módulos a realizar?</a></li>
+      <li><a href="#modulos_simultaneos">¿Cuántos módulos puedo hacer a la vez?</a></li>
+      <li><a href="#empezar_modulo">¿Por qué módulo debería empezar?</a></li>
+      <li><a href="#desactivar_modulo">¿Se puede desactivar un módulo para hacer otro?</a></li>
+      <li><a href="#completar_modulo">¿Cómo completo un módulo?</a></li>
+      <li><a href="#acceso_modulo_completo">¿Puedo volver a acceder al contenido de un módulo que ya he completado?</a></li>
+      <li><a href="#mapa_emocional">¿Qué puedo encontrar en el mapa emocional?</a></li>
+      <li><a href="#activar_modulo_mapa">¿Cómo activo un módulo que encuentro en el mapa emocional?</a></li>
+      <li><a href="#ambitos_vida">¿En qué consiste el apartado ámbitos de la vida que aparece en mi plan de tratamiento?</a></li>
     </ol>
 
     <h2 id="destinada">1. ¿A quién está destinada la aplicación?</h2>
@@ -107,3 +125,4 @@
   </section>
 </body>
 </html>
+
