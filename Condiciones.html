@@ -19,21 +19,77 @@
             padding: 20px;
         }
 
+        header img {
+            max-width: 80%;
+            margin-bottom: 10px;
+        }
+
         section {
             text-align: left;
             padding: 20px;
         }
 
-        /* Style to underline text */
         u {
             text-decoration: underline;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        ol ol, ul ul {
+            padding-left: 20px;
+        }
+
+        ol ol ol, ul ul ul {
+            padding-left: 20px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        p a, li a {
+            color: #ffffff;
+        }
+
+        p a:hover, li a:hover {
+            color: #aaaaaa;
+        }
+
+        p u, li u {
+            color: #4CAF50;
+        }
+
+        p u:hover, li u:hover {
+            color: #45a049;
+        }
+
+        p strong, li strong {
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header img {
+                max-width: 100%;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            p, li {
+                font-size: 14px;
+                line-height: 1.5;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="images/Presto_Blanco.png" alt="Header Image" style="max-width: 300px;">
+        <img src="images/Presto_Blanco.png" alt="Header Image">
         <h1>Aviso Legal</h1>
     </header>
 
@@ -115,4 +171,5 @@
         <p style="text-align: center; font-weight: bold;">Estas condiciones legales han sido actualizadas y validadas por última vez el 19/12/2023.</p>
     </section>
 </body>
+
 </html>
